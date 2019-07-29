@@ -4,9 +4,25 @@
         <servlet-name>NuevoSuscriptor</servlet-name>
         <servlet-class>SerVlet.NuevoSuscriptor</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InicioSesion</servlet-name>
+        <servlet-class>SerVlet.InicioSesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>SerVlet.NewServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NuevoSuscriptor</servlet-name>
         <url-pattern>/crearsuscriptor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InicioSesion</servlet-name>
+        <url-pattern>/Log_in</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
