@@ -12,6 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Hello ZaWarudo!</h1>
+        <h1>El inicio de sesion fue satisfactorio</h1>
     </body>
 </html>
