@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.File;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +20,6 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-import org.apache.tomcat.jni.File;
 
 /**
  *
@@ -44,18 +44,23 @@ public class NuevoSuscriptor extends HttpServlet {
         ServletFileUpload sfu = new  ServletFileUpload(file_factory);
         
         ArrayList<String> campos = new ArrayList<>();
-        
+        String img = "No imagen"; 
         try {
             List items = sfu.parseRequest(request);
             for (int i = 0; i < items.size(); i++) {
                 FileItem item = (FileItem) items.get(i);
-                
-                campos.add(item.getString());
+                if(!item.isFormField()){
+                    File archivo = new File("C:\\Users\\Alfonso\\Desktop\\animeflix\\web\\img\\fotosPerfil\\"+item.getName());
+                    item.write(archivo);
+                    img ="img\\fotosPerfil\\"+item.getName();
+                }else{
+                    campos.add((item.getString()));
+                }
             }
         } catch (Exception ex) {
         }
         
-        Suscriptor s = new Suscriptor(campos.get(0),campos.get(1), campos.get(2), campos.get(3), campos.get(4));
+        Suscriptor s = new Suscriptor(campos.get(0),campos.get(1), campos.get(2), img);
         Suscriptor_controller cs = new Suscriptor_controller();
         response.getWriter().println(cs.crearSuscriptor(s));
         

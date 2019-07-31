@@ -29,6 +29,10 @@
                     <td><input type="text" name="Password" id="password"></td>
                 </tr>
                 <tr>
+                    <td><label for="">Foto de Perfil:</label></td>
+                    <td><input type="file" name="file" id="archivos"></td>
+                </tr>
+                <tr>
                     <td></td>
                     <td><input type="submit" value="crear Suscriptor" id="btncrearsuscriptor"></td>
                 </tr>

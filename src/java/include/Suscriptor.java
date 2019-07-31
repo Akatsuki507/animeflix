@@ -11,33 +11,20 @@ package include;
  */
 public class Suscriptor {
 
-    /**
-     * @return the Foto_perfil
-     */
-    public String getFoto_perfil() {
-        return Foto_perfil;
-    }
 
-    /**
-     * @param Foto_perfil the Foto_perfil to set
-     */
-    public void setFoto_perfil(String Foto_perfil) {
-        this.Foto_perfil = Foto_perfil;
-    }
     private String cuenta;
     private String email;
     private String password;
-    private String telefono;
     private String Foto_perfil;
     
     public Suscriptor() {
     }
 
-    public Suscriptor(String cuenta, String email, String password, String telefono) {
+    public Suscriptor(String cuenta, String email, String password , String Foto_perfil) {
         this.cuenta = cuenta;
         this.email = email;
         this.password = password;
-        this.telefono = telefono;
+        this.Foto_perfil = Foto_perfil;
     }
 
     
@@ -84,18 +71,18 @@ public class Suscriptor {
         this.password = password;
     }
 
-    /**
-     * @return the telefono
+        /**
+     * @return the Foto_perfil
      */
-    public String getTelefono() {
-        return telefono;
+    public String getFoto_perfil() {
+        return Foto_perfil;
     }
 
     /**
-     * @param telefono the telefono to set
+     * @param Foto_perfil the Foto_perfil to set
      */
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setFoto_perfil(String Foto_perfil) {
+        this.Foto_perfil = Foto_perfil;
     }
 
 }
