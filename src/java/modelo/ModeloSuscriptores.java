@@ -19,11 +19,15 @@ public class ModeloSuscriptores extends Conexion {
         PreparedStatement pst = null;
         boolean flag = false;
         try {
-            String sql = "call insertarSuscriptor(?,?,?)";
+            String sql = "call insertarSuscriptor(?,?,?,?,?)";
             pst = getConnection().prepareStatement(sql);
             pst.setString(1, s.getCuenta());
             pst.setString(2, s.getEmail());
-            pst.setString(3, s.getPassword());  
+            pst.setString(3, s.getPassword());
+            pst.setString(4, s.getTelefono());
+            pst.setString(5, s.getFoto_perfil());
+            
+            
             if(pst.executeUpdate() == 1 ){
                 flag = true;
             }

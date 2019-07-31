@@ -55,7 +55,7 @@ public class NuevoSuscriptor extends HttpServlet {
         } catch (Exception ex) {
         }
         
-        Suscriptor s = new Suscriptor(0, campos.get(0),campos.get(1), campos.get(2));
+        Suscriptor s = new Suscriptor(campos.get(0),campos.get(1), campos.get(2), campos.get(3), campos.get(4));
         Suscriptor_controller cs = new Suscriptor_controller();
         response.getWriter().println(cs.crearSuscriptor(s));
         

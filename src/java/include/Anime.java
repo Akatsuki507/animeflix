@@ -1,0 +1,90 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package include;
+
+/**
+ *
+ * @author Alfonso
+ */
+public class Anime {
+
+    /**
+     * @return the cod_anime
+     */
+    public int getCod_anime() {
+        return cod_anime;
+    }
+
+    /**
+     * @param cod_anime the cod_anime to set
+     */
+    public void setCod_anime(int cod_anime) {
+        this.cod_anime = cod_anime;
+    }
+
+    /**
+     * @return the Nombre_anime
+     */
+    public String getNombre_anime() {
+        return Nombre_anime;
+    }
+
+    /**
+     * @param Nombre_anime the Nombre_anime to set
+     */
+    public void setNombre_anime(String Nombre_anime) {
+        this.Nombre_anime = Nombre_anime;
+    }
+
+    /**
+     * @return the Genero
+     */
+    public String getGenero() {
+        return Genero;
+    }
+
+    /**
+     * @param Genero the Genero to set
+     */
+    public void setGenero(String Genero) {
+        this.Genero = Genero;
+    }
+
+    /**
+     * @return the Descripcion
+     */
+    public String getDescripcion() {
+        return Descripcion;
+    }
+
+    /**
+     * @param Descripcion the Descripcion to set
+     */
+    public void setDescripcion(String Descripcion) {
+        this.Descripcion = Descripcion;
+    }
+
+    /**
+     * @return the Portada
+     */
+    public String getPortada() {
+        return Portada;
+    }
+
+    /**
+     * @param Portada the Portada to set
+     */
+    public void setPortada(String Portada) {
+        this.Portada = Portada;
+    }
+    private int cod_anime;
+    private String Nombre_anime;
+    private String Genero;
+    private String Descripcion;
+    private String Portada;
+    
+    
+}

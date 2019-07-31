@@ -10,34 +10,38 @@ package include;
  * @author Alfonso
  */
 public class Suscriptor {
-    private int id;
+
+    /**
+     * @return the Foto_perfil
+     */
+    public String getFoto_perfil() {
+        return Foto_perfil;
+    }
+
+    /**
+     * @param Foto_perfil the Foto_perfil to set
+     */
+    public void setFoto_perfil(String Foto_perfil) {
+        this.Foto_perfil = Foto_perfil;
+    }
     private String cuenta;
     private String email;
     private String password;
-
+    private String telefono;
+    private String Foto_perfil;
+    
     public Suscriptor() {
     }
 
-    public Suscriptor(int id, String cuenta, String email, String password) {
-        this.id = id;
+    public Suscriptor(String cuenta, String email, String password, String telefono) {
         this.cuenta = cuenta;
         this.email = email;
         this.password = password;
-    }
-    /**
-     * @return the id
-     */
-    public int getId() {
-        return id;
+        this.telefono = telefono;
     }
 
-    /**
-     * @param id the id to set
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
+    
+    
     /**
      * @return the cuenta
      */
@@ -78,6 +82,20 @@ public class Suscriptor {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * @return the telefono
+     */
+    public String getTelefono() {
+        return telefono;
+    }
+
+    /**
+     * @param telefono the telefono to set
+     */
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
 }

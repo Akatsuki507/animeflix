@@ -3,11 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Alfonso/Desktop/Proyecto%20programacion/Animeflix/Animeflix/src/java/Entidades/Animes.java</file>
-            <file>file:/C:/Users/Alfonso/Desktop/Proyecto%20programacion/Animeflix/Animeflix/src/java/Procesos/Procesos_Anime.java</file>
-            <file>file:/C:/Users/Alfonso/Desktop/Proyecto%20programacion/Animeflix/Animeflix/src/java/Conector.java</file>
-            <file>file:/C:/Users/Alfonso/Desktop/Proyecto%20programacion/Animeflix/Animeflix/web/jspprueba.jsp</file>
-            <file>file:/C:/Users/Alfonso/Desktop/Proyecto%20programacion/Animeflix/Animeflix/web/index.html</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/CSS/Inicio%20Sesion.css</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/modelo/ModeloAnime.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/web/Log_In.jsp</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/controllers/Anime_controller.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/controllers/Suscriptor_controller.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/modelo/Conexion.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/web/index.html</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/include/Suscriptor.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/modelo/ModeloSuscriptores.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/SerVlet/InicioSesion.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/web/menu.jsp</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/SerVlet/NuevoSuscriptor.java</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/web/Sign_In.jsp</file>
+            <file>file:/C:/Users/Alfonso/Desktop/animeflix/src/java/include/Anime.java</file>
         </group>
     </open-files>
 </project-private>
