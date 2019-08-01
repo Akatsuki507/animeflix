@@ -14,11 +14,14 @@
         <title>Animeflix - Búsqueda</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="css/buscador.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
+            <jsp:include page="header.jsp"/>
         <%
             Anime_controller Ac = new Anime_controller();
         %>
         <%= Ac.getViewAnimes()%>
     </body>
+    <jsp:include page="footer.jsp"/>
 </html>

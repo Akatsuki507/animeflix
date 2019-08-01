@@ -7,10 +7,6 @@ body{
     background-color: black;
     padding: 15px;
 }
-.subir-anime{
-    background-color: black;
-    text-align: center;
-}
 #show-img-new-anime{
     display: inline-block;
     position: relative;
