@@ -20,8 +20,8 @@
             <a href="http://www.facebook.com/"><img class="red-social" src="img\logos\rd-fb.png"></a>
         </section>
         <section class="sec-foot">
-            <a class="txt-foot">Acerca del Proyecto</a>
-            <a class="txt-foot">Contactar</a>
+            <a href=""><p class="text-light">Acerca del Proyecto</p></a>
+            <a href=""><p class="text-lightt">Contactar</p></a>
         </section>
         <section class="sec-foot">
             <p class="txt-foot">Derechos Reservados. Universidad Tecnológica de Panamá 2019.</p>

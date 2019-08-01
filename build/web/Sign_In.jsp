@@ -12,6 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+            <jsp:include page="header.jsp"/>
         <a href="index.html">volver</a>
         <h1>Registrese</h1>
         <form action="crearsuscriptor" name="frm_newSuscriptor" method="POST" enctype="multipart/form-data" id="frm_newSuB">
@@ -38,6 +39,7 @@
                 </tr>
             </table>
         </form>
+        <jsp:include page="footer.jsp"/>
         
     </body>
 </html>

@@ -15,17 +15,7 @@
     <title>Login</title>
 </head>
 <body class="Body">
-    <header class="Header1">
-        <ul class="Lista_Header">
-            <li>
-                <img src="Logo_Netflix.png" alt="Logo Netflix" class="Logo">
-            </li>
-            <li>
-                <img src="Foto_perfil.png" alt="" class="Foto_perfil"> 
-            </li>
-        </ul>
-    </header>
-
+        <jsp:include page="header.jsp"/>
     </div>
         <form action="Log_in" name="frm_login">
             <table>
@@ -51,17 +41,6 @@
         <input type="button" value="Suscribete ya" id="btncrearsuscriptor" class="Suscribete">
         
     
-    <footer class="PiePagina">
-        <div class="Pie">
-                Numero de ayuda: +507 6996-0731<br>
-                <a href="Pagina de acerca del proyecto.html">Acerca del proyecto!</a><br>
-                <a href="pagina de contacto.html">Contactenos!</a> <br>
-                Privacidad<br>
-                Legalidad de la pagina
-            <div>
-                <img src="redes-sociales.png" alt="Social Media" class="Foto_foot">
-            </div>
-        </div>
-    </footer>
+        <jsp:include page="footer.jsp"/>
 </body>
 </html>
