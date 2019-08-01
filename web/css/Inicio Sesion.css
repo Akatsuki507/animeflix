@@ -1,95 +1,71 @@
-.Header1{
-    padding: 0%;
-    margin: 0%;
-    background-color: black;
-}
-
-.Logo{
-    width: 275px;
-    height: 100px;
-}
-
-.Lista_Header{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: block;
-}
-
-.Foto_perfil{
-    position: relative;
-    float: right;
-    top: -100px;
-    right: 30px;
-    width: 2.5cm;
-    height: 2.5cm;
-    color: white;
-    background-color: black;
-    font-size: 27px;
-    
-}
 
 .Body{
     margin: 0%;
 }
 
 Body{
-    background-image: url(Fondo_login.jpg)
+    background-image: url(Fondo_login.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Helvetica;
 }
 
 /*--------------------------FORMULARIO-----------------------*/
 
 .Caja{
-    width: 13cm; 
-    height: 15cm;
-    background-color:black;
+    width: 38%; 
+    background-color:rgb(0,0,0,0.65);
     color: orange;
+    margin-left: 0%;
     position: relative;
-    display: block;
-    margin-left: 35%;
-    margin-right: 50%;
-    margin-top: 10%;
-    border-color: white;
-    border-style: solid;
-    
+    height:18.4cm;
+    float: left;
 }
 
+.Titulo{
+    color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative ;
+    margin-left: 5%;
+}
+
+input:focus{
+    border-color: none;
+    box-shadow: 0 0 5px 0 black;
+}
 .Clave_texto{
-    width: 90%;
+    width: 80%;
     margin-left: 4%;
-    height: 0.5cm;
-    border-color: orange;
+    height: 1.3cm;
+    border-color: black;
     border-style: groove;
     background-color:rgb(100,114,114,0.1);
-    color: orange;
-        
+    color: white;
+    text-indent: 3em;    
+    font-size: 1em;   
 }
 
 .Correo_texto{
-    width: 90%;
-    height: 0.5cm;
+    width: 80%;
+    height: 1.3cm;
     margin-left: 4%;
-    border-color: orange;
+    border-color: black;
     border-style: groove;
     background-color:rgb(100,114,114,0.1);
-    color: orange;
+    color: white;
+    text-indent: 3em;
+    font-size: 1em;
 }
 
 .Correo{
     font-family: arial;
     font-size: 17px;
     font-style: italic;
+    margin-left: 5px;
 }
 
-.Iniciar_boton{
-    width: 150px;
-    height: 1cm;
-    margin: 10px;
-    margin-left: 4%;
-    background-color: red;
-    color: white;
-    border-color: black;
-}
+
 
 .Recuerdame{
     margin: 10px;
@@ -99,37 +75,81 @@ Body{
     width: auto;
 }
 
-.Check{
-    float: right;
-    bottom: 10px;
-    position: relative;
-    text-align: center;
-    margin-right: 25px
-}
+
 
 .Suscribete{
-    margin-top: 35%;
-    margin-left: 40%;
-    width: 150px;
+    margin-top: 42%;
+    margin-left: 0%;
+    width: 350px;
     height: 1cm;
-    background-color: red;
+    background-color: transparent;
     color: white;
-    border-color: black;
-}
-
-.Foto_foot{
+    border-color: transparent;
     position: relative;
-    height: 3cm;
-    float: right;
-    margin-top: -115px;
+    color: cadetblue;
+    cursor: pointer;
 }
 
-.Pie{
-    color: white;
-    font-size: 20px;
-    background-color: black;
-    margin-top: 5%; 
-    margin-left:3%; 
-    margin-bottom: 3%;
-    position: relative; 
+
+.inputconicono{
+    position: relative;
+}
+
+.inputconicono i{
+    position: absolute;
+    left: 4%;
+    top: 17%;
+    padding: 9px 8px;
+    color: orange;
+    transition: 0.3s;
+}
+
+.inputconicono input[type=text]:focus + i{
+    color: gray;
+    
+}
+
+.inputconicono input[type=password]:focus + i{
+    color: gray;
+    
+}
+
+a[class=rainbow-button]{
+    text-decoration:none;
+  color:#FFF;
+    width: 30%;
+    height: 5%
+}
+
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:15px;
+  font-weight:bold;
+    margin-left:4%
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+    height: 88%;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
 }
