@@ -1,0 +1,23 @@
+body{
+    background-color: black; 
+    background: black;
+    margin: 0px;
+}
+.new-anime{
+    background-color: black;
+    padding: 15px;
+}
+.subir-anime{
+    background-color: black;
+    text-align: center;
+}
+#show-img-new-anime{
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+}
+#sample-img-new-anime{
+    object-fit: contain;
+    
+    height: 500px;
+}

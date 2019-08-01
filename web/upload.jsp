@@ -10,11 +10,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Upload</title>
-        <link href="bootstrap.min.css" rel="stylesheet" type="text/css" >
-        <link href="SubirAnime.css" rel="stylesheet" type="text/css" >
-        <script src="main.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+        <link href="css/SubirAnime.css" rel="stylesheet" type="text/css" >
+        <script src="js/main.js"></script>
     </head>
     <body>
+            <jsp:include page="header.jsp"/>
                 <section class="new-anime row">
                     <div class="col-sm-12"> 
                         <h1 class="text-light display-1">Subir Anime</h1>
@@ -31,7 +32,6 @@
                                 <label for="Descripcion" class="text-light"><h4>Descripción:</h4></label>
                                 <textarea class="form-control" cols="30" rows="6" name="Descripcion" id="Descripcion"></textarea>
                             </div>
-                            <input type="submit" value="Crear Anime" class="btn-lg btn-success" id="btncrearsuscriptor">
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
@@ -72,5 +72,6 @@
                         </div>     
                 </section>
             </form>
+            <jsp:include page="footer.jsp"/>
     </body>
 </html>
