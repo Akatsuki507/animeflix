@@ -61,7 +61,7 @@ public class NuevoAnime extends HttpServlet {
         } catch (Exception ex) {
         }
 
-        Anime a = new Anime(campos.get(0), campos.get(1), campos.get(2), img, campos.get(3));
+        Anime a = new Anime(0,campos.get(0), campos.get(1), campos.get(2), img, campos.get(3));
         Anime_controller Ac = new Anime_controller();
         response.getWriter().println(Ac.crearAnime(a));
 
