@@ -40,8 +40,7 @@ body{
 }
 
 
-button{
-    
+input [type=submit]{
         display: inline-block;
         width: 290px;
         height: 65px;
@@ -88,13 +87,7 @@ textarea {
     height: 5em;
     resize: vertical;
 }
-header{
-    background-color:grey;
-    color: orangered;
-   margin:0 auto;
-   position: relative;
-   padding: 0%;
-}
+
 .espaciom{
     margin-top: 10px;
 }
@@ -142,22 +135,20 @@ div{
     
 }
 .nm1{
-    color: whitesmoke;
-    
+    color: white;
     border:2px solid white;
-    border: 
-      color: white;
-      padding: 16px 32px;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      -webkit-transition-duration: 0.4s; /* Safari */
-      transition-duration: 0.4s;
-      cursor: pointer;
-      text-decoration: none;
-      text-transform: uppercase;
+    background-color: orangered;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
 .nm1:hover{
     background-color:rgb(255,125,0,0.20) ;
     color: white;
