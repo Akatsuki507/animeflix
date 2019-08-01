@@ -37,7 +37,6 @@ public class Anime_controller {
 "           </div>\n" +
 "       </a>"
                     + "";
-        }
         return htmlcode;
     }
     
