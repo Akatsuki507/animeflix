@@ -19,12 +19,13 @@ public class ModeloAnime extends Conexion {
         PreparedStatement pst = null;
         boolean flag = false;
         try {
-            String sql = "call insertarAnime(?,?,?,?,?,?)";
+            String sql = "call insertarAnime(?,?,?,?,?)";
             pst = getConnection().prepareStatement(sql);
             pst.setString(1, a.getNombre_anime());
             pst.setString(2, a.getGenero());
             pst.setString(3, a.getDescripcion());
             pst.setString(4, a.getPortada());
+            pst.setString(5, a.getYear());
 
             if (pst.executeUpdate() == 1) {
                 flag = true;
@@ -43,5 +44,10 @@ public class ModeloAnime extends Conexion {
             }
         }
         return flag;
+    }
+    
+    public static void main(String[] args) {
+        ModeloAnime ma = new ModeloAnime();
+        System.out.println(ma.crear_anime(new Anime("Citrus","Yuri","El de los tijerazos","No imagen","2015")));
     }
 }

@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Subir Anime</h1>
-        <form action="crearAnime" name="frm_newSuscriptor" method="POST" enctype="multipart/form-data" id="frm_newSuB">
+        <form action="crearAnime" name="frm_newAnime" method="POST" enctype="multipart/form-data" id="frm_newAni">
             <table>
                 <tr>
                     <td><label for="">Nombre Anime</label></td>
@@ -31,7 +31,7 @@
                                     <option value="Yuri">Yuri</option>
                                 <% } %>
                                 <%if(i == 3){ %>
-                                    <option value="Shoyo">Shoyo</option>
+                                    <option value="Shojo">Shojo</option>
                                 <% } %>
                                 <%if(i == 4){ %>
                                     <option value="Isekai">Isekai</option>  
@@ -57,7 +57,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="crear Anime" id="btncrearsuscriptor"></td>
+                    <td><input type="submit" value="Crear Anime" id="btncrearAnime"></td>
                 </tr>
             </table>
         </form>

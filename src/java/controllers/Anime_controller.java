@@ -14,8 +14,8 @@ import modelo.ModeloAnime;
  */
 public class Anime_controller {
     public boolean crearAnime(Anime a){
-        ModeloAnime ma = new ModeloAnime();
-        return ma.crear_anime(a);
+        ModeloAnime modeloA = new ModeloAnime();
+        return modeloA.crear_anime(a);
     }
     
 }

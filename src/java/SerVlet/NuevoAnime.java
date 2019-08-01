@@ -5,12 +5,21 @@
  */
 package SerVlet;
 
+import controllers.Anime_controller;
+import include.Anime;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.io.File;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileItemFactory;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 /**
  *
@@ -30,18 +39,32 @@ public class NuevoAnime extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet NuevoAnime</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet NuevoAnime at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+
+        FileItemFactory file_factory = new DiskFileItemFactory();
+        ServletFileUpload sfu = new ServletFileUpload(file_factory);
+
+        ArrayList<String> campos = new ArrayList<>();
+        String img = "No imagen";
+
+        try {
+            List items = sfu.parseRequest(request);
+            for (int i = 0; i < items.size(); i++) {
+                FileItem item = (FileItem) items.get(i);
+                if (!item.isFormField()) {
+                    File archivo = new File("C:\\Users\\Alfonso\\Desktop\\animeflix\\web\\img\\PortadaAnimes\\" + item.getName());
+                    item.write(archivo);
+                    img = "img\\PortadaAnimes\\" + item.getName();
+                } else {
+                    campos.add((item.getString()));
+                }
+            }
+        } catch (Exception ex) {
         }
+
+        Anime a = new Anime(campos.get(0), campos.get(1), campos.get(2), img, campos.get(3));
+        Anime_controller Ac = new Anime_controller();
+        response.getWriter().println(Ac.crearAnime(a));
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

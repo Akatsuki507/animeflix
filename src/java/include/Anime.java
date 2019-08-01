@@ -11,38 +11,20 @@ package include;
  */
 public class Anime {
 
-    private int cod_anime;
     private String Nombre_anime;
     private String Genero;
     private String Descripcion;
     private String Portada;
     private String Year;
 
-    public Anime(int cod_anime, String Nombre_anime, String Genero, String Descripcion, String Portada, String Year) {
-        this.cod_anime = cod_anime;
+    public Anime(String Nombre_anime, String Genero, String Descripcion, String Portada, String Year) {
         this.Nombre_anime = Nombre_anime;
         this.Genero = Genero;
         this.Descripcion = Descripcion;
         this.Portada = Portada;
         this.Year = Year;
     }
-
-    
-    /**
-     * @return the cod_anime
-     */
-    public int getCod_anime() {
-
-        return cod_anime;
-    }
-
-    /**
-     * @param cod_anime the cod_anime to set
-     */
-    public void setCod_anime(int cod_anime) {
-        this.cod_anime = cod_anime;
-    }
-
+   
     /**
      * @return the Nombre_anime
      */
