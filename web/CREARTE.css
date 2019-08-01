@@ -1,0 +1,63 @@
+.test  li{
+	float: left;
+	width: 18%;
+	
+	line-height: auto;
+	padding: 1%;
+	list-style: none;
+	
+	background-color: black;
+	}
+
+	.BC{
+		background-color: black; 
+	}
+	nav{
+		background-color: black;
+	}
+	.red{
+		color:red;
+	}
+	.blanca{
+		color: #fff;
+	}
+	.blanca1{
+		color:#fff;
+		text-align: center;
+	}
+	.blanca2{
+		color:#fff;
+		text-align: left;
+	}
+	.lab{
+		float: left;
+		width: 50%;
+		padding-left:25%;
+		padding-right: 25%;
+		color: #fff;
+	}
+	.parent {
+    
+}
+
+.lo div {
+	width: 30%;
+	float:left;
+	margin-left: 1%;
+	padding: 1%;
+	text-align: center;
+
+}
+.lo a{
+	text-align: center;
+}
+
+.edit{
+	width: 30%;
+	float:left;
+	margin-left: 1%;
+	padding: 1%;
+	text-align: center;
+	color: #fff;
+
+}
