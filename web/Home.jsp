@@ -1,6 +1,6 @@
 <%-- 
-    Document   : menu
-    Created on : jul 29, 2019, 8:05:01 a.m.
+    Document   : Home
+    Created on : jul 31, 2019, 6:15:01 p.m.
     Author     : Alfonso
 --%>
 
@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello ZaWarudo!</h1>
-        <h1>El inicio de sesion fue satisfactorio</h1>
+        <h1>Hello World!</h1>
     </body>
 </html>

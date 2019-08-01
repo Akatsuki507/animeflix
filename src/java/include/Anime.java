@@ -11,10 +11,28 @@ package include;
  */
 public class Anime {
 
+    private int cod_anime;
+    private String Nombre_anime;
+    private String Genero;
+    private String Descripcion;
+    private String Portada;
+    private String Year;
+
+    public Anime(int cod_anime, String Nombre_anime, String Genero, String Descripcion, String Portada, String Year) {
+        this.cod_anime = cod_anime;
+        this.Nombre_anime = Nombre_anime;
+        this.Genero = Genero;
+        this.Descripcion = Descripcion;
+        this.Portada = Portada;
+        this.Year = Year;
+    }
+
+    
     /**
      * @return the cod_anime
      */
     public int getCod_anime() {
+
         return cod_anime;
     }
 
@@ -80,11 +98,19 @@ public class Anime {
     public void setPortada(String Portada) {
         this.Portada = Portada;
     }
-    private int cod_anime;
-    private String Nombre_anime;
-    private String Genero;
-    private String Descripcion;
-    private String Portada;
-    
-    
+
+    /**
+     * @return the Year
+     */
+    public String getYear() {
+        return Year;
+    }
+
+    /**
+     * @param Year the Year to set
+     */
+    public void setYear(String Year) {
+        this.Year = Year;
+    }
+
 }
