@@ -16,6 +16,10 @@
         <servlet-name>NuevoAnime</servlet-name>
         <servlet-class>SerVlet.NuevoAnime</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>NuevoCapitulo</servlet-name>
+        <servlet-class>SerVlet.NuevoCapitulo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NuevoSuscriptor</servlet-name>
         <url-pattern>/crearsuscriptor</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>NuevoAnime</servlet-name>
         <url-pattern>/crearAnime</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NuevoCapitulo</servlet-name>
+        <url-pattern>/NuevoCapitulo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
