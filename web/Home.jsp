@@ -18,7 +18,6 @@
     <body>
         <%
             Anime_controller Ac = new Anime_controller();
-
         %>
         <%= Ac.getViewAnimes()%>
     </body>
