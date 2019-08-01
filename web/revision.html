@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animeflix - Revisión de contenido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="revision.css" />
+    <script src="revision.js"></script>
+</head>
+<body>
+        <header class="Header1">
+                <ul class="Lista_Header">
+                    <li>
+                        <img src="Logo_Netflix.png" alt="Logo Netflix" class="Logo">
+                    </li>
+                    <li>
+                        <input type="button" value="Perfil de usuario" class="Login">  
+                    </li>
+                </ul>
+            </header>
+    <section id="datos">
+    <section id="datos-izq">
+        <div id="add-cat">
+            <h4 class="head-sec">Categorías</h4>
+            <div id="old-cat">
+            </div>
+            <input type="text" id="new-cat" class="ele-rev" >
+            <button onclick="añadirCat()">Añadir</button>
+        </div>
+        <div id="add-dir">
+            <h4 class="head-sec">Director</h4>
+            <p class="ele" id="dir">Director</p>
+            <input type="text" id="new-dir" class="ele-rev" >
+            <button onclick="añadirDir()">Editar</button>
+        </div>
+        <div id="add-rep">
+            <h4 class="head-sec">Reparto</h4>
+            <div id="old-rep">
+            </div>
+            <input type="text" id="new-rep" class="ele-rev" >
+            <button onclick="añadirRep()">Añadir</button>
+        </div>
+        <div id="add-est">
+            <h4 class="head-sec">Estudio</h4>
+            <p class="ele" id="est">Estudio</p>
+            <input type="text" id="new-est" class="ele-rev" >
+            <button onclick="añadirEst()">Editar</button>
+        </div>
+        <div id="botones">
+            <div class="boton-rev" id="aceptar"><h2>Guardar<br>Contenido</h2></div>
+            <div class="boton-rev" id="cancelar"><h2>Eliminar<br>Contenido</h2></div>
+        </div>
+    </section>
+
+    <section id="datos-der">
+        <div id="add-tit">
+            <h4 class="ele" id="tit">Título</h4>
+            <input type="text" id="new-tit" class="ele-rev" >
+            <button onclick="añadirTit()">Editar</button>
+        </div>
+        <div id="rev-vid">
+            <video id="vid-ani" controls>
+                <source src="video/Animegraphy2013.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="add-sinop">
+            <h4 class="ele">Sinopsis</h4>
+            <input type="text" id="new-sinop" class="ele-rev" >
+            <button onclick="añadirSinop()">Editar</button>
+            <div id="sinop-box">
+                <p id="sinopsis"></p>
+            </div>
+        </div>
+    </section>
+</section>
+    
+</body>
+</html>
