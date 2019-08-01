@@ -4,14 +4,21 @@
     Author     : Alfonso
 --%>
 
+<%@page import="controllers.Anime_controller"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Animeflix - Búsqueda</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/buscador.css" />
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%
+            Anime_controller Ac = new Anime_controller();
+        %>
+        <%= Ac.getViewAnimes()%>
     </body>
 </html>

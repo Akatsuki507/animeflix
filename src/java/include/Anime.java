@@ -18,7 +18,7 @@ public class Anime {
     private String Portada;
     private String Year;
 
-    public Anime(int cod_anime, String Nombre_anime, String Genero, String Descripcion, String Portada, String Year) {
+    public Anime(int cod_anime,String Nombre_anime, String Genero, String Descripcion, String Portada, String Year) {
         this.cod_anime = cod_anime;
         this.Nombre_anime = Nombre_anime;
         this.Genero = Genero;
@@ -27,12 +27,10 @@ public class Anime {
         this.Year = Year;
     }
 
-    
     /**
      * @return the cod_anime
      */
     public int getCod_anime() {
-
         return cod_anime;
     }
 
